@@ -1,0 +1,129 @@
+:root {
+    --title_font: 'Montserrat', sans-serif;
+    --body_font: 'Open Sans', sans-serif;
+    --background_color: #DDF2EB;
+    --nav_footer_color: #4C8577;
+    --font_color: #1B2021;
+    --accent_color: #0A66C2;
+}
+
+body {
+    background-color: var(--background_color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--body_font);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav_footer_color);
+    padding: 10px 20px;
+    color: white;
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    font-family: var(--title_font);
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: var(--body_font);
+}
+
+nav a:hover {
+    color: var(--accent_color);
+}
+
+/* Main layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "intro profile"
+        "cert certificates";
+    gap: 20px;
+    padding: 20px;
+}
+
+main h1 {
+    grid-area: title;
+    text-align: center;
+    font-family: var(--title_font);
+    color: var(--font_color);
+}
+
+.introduction,
+.profile {
+    background-color: var(--nav_footer_color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 600px;
+    flex: 1 1 300px;
+}
+
+.introduction {
+    grid-area: intro;
+}
+.profile {
+    grid-area: profile;
+    text-align: center;
+}
+.profile img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav_footer_color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent_color);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
