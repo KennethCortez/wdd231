@@ -84,6 +84,13 @@ main h1, h2 {
     color: var(--font_color);
 }
 
+main p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--font_color);
+    font-family: var(--body_font);
+}
+
 .introduction,
 .profile {
     background-color: var(--nav_footer_color);
