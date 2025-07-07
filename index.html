@@ -14,12 +14,14 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="header-top">
             <img src="images/main_logo.svg" alt="The main logo of this website">
             <h1>Business connect</h1>
             <button class="hamburger" aria-label="Toggle navigation">
                 <span class="hamburger-icon">☰</span>
             </button>
+        </div>
+        <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="journey.html">Start the journey</a></li>
@@ -31,7 +33,10 @@
         <h1>Business connect</h1>
         <section class="introduction">
             <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis explicabo fugiat rem voluptatem impedit quis, in ullam, aliquid nulla fuga tempora? Saepe quasi veniam culpa. Incidunt veniam accusantium aspernatur eos!</p>
+            <p>My name is Kenneth Cortez, from El Salvador, i'm 22 years old. I've been married for 7 months. Currently I'm studying a software development degree at BYU. 
+            I work with my father in project management and project execution. We do many things such as metal structures, we install false ceilings, we do electrical circuits and more. 
+            At my ward i serve as the executive secretary. I served in Santa Ana, El Salvador Mission.
+            </p>
         </section>
         <section class="profile">
             <h2>Kenneth Cortez</h2>
@@ -39,6 +44,12 @@
         </section>
         <section class="certificates">
             <h2>Web certificate courses</h2>
+            <div class="filter-buttons">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+            <ul id="courseList"></ul>
         </section>
     </main>
     <footer>
@@ -47,6 +58,9 @@
         </a>
         <a href="https://www.linkedin.com/in/kenneth-cortez-128900272/" target="_blank">
             <i class="fab fa-linkedin" style="font-size: 40px; color: #0A66C2;"></i>
+        </a>
+        <a href="https://www.churchofjesuschrist.org" target="_blank">
+        <img src="images/church-logo.jpeg" alt="The Church of Jesus Christ of Latter Day Saints logo" style="height: 34px;">
         </a>
         <p>
             ©️<span id="currentyear"></span>
