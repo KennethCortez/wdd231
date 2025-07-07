@@ -148,3 +148,18 @@ cseBtn.addEventListener('click', () => {
     const cseCourses = courses.filter(c => c.subject === 'CSE');
     renderCourses(cseCourses);
 });
+
+function renderCourses(list) {
+    courseList.innerHTML = '';
+
+    list.forEach(course => {
+    const li = document.createElement('li');
+    li.classList.add('course-item');
+    li.classList.add(course.completed ? 'completed' : 'incomplete');
+    li.textContent = course.title;
+    courseList.appendChild(li);
+    });
+
+    const totalCredits = list.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById('creditTotal').textContent = `Total Credits: ${totalCredits}`;
+}
