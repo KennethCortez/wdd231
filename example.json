@@ -1,0 +1,28 @@
+{
+    "family_name": "Cortez",
+    "date_of_moved": "2020-07-23",
+    "number_of_members": 4,
+    "visited": true,
+    "family_members": [
+        {
+            "name": "Kenneth",
+            "gender": "male",
+            "birthday": "2002-10-16"
+        },
+        {
+            "name": "Maria",
+            "gender": "female",
+            "birthday": "1999-05-20"
+        },
+        {
+            "name": "Jose", 
+            "gender": "male",
+            "birthday": "1998-03-15"
+        },
+        {
+            "name": "Ana",
+            "gender":"female",
+            "birthday": "2005-08-30"
+        }
+    ]
+}
