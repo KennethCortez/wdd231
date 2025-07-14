@@ -1,0 +1,58 @@
+[
+    {
+        "name":"Agroferreteria La Yunta",
+        "address":"P.º 15 de Septiembre, Sonsonate, El Salvador",
+        "phone":"+503 2450 1947",
+        "website":"https://www.facebook.com/layuntasadecv/?locale=es_LA",
+        "image":"layunta.jpeg",
+        "membership_level":"2"
+    },
+    {
+        "name":"Clidisa Medicos",
+        "address":"5a Avenida Norte, Barrio San Francisco, Sonsonate, El Salvador",
+        "phone":"+503 2429 1288",
+        "website":"https://www.facebook.com/CLIDISA3/?locale=es_LA",
+        "image":"clidisa.jpeg",
+        "membership_level":"3"
+    },
+    {
+        "name":"Ferreteria Santa Sofia",
+        "address":"5a Avenida Norte, Barrio San Francisco, Sonsonate, El Salvador",
+        "phone":"+503 7798 4564",
+        "website":"https://www.facebook.com/santasofiaferreterias/?locale=es_LA",
+        "image":"santasofia.png",
+        "membership_level":"3"
+    },
+    {
+        "name":"Cintamax",
+        "address":"Col. La Pradera Lote 1 y 2 Block C, Sonsonate, El Salvador",
+        "phone":"+503 2413 6033",
+        "website":"https://www.facebook.com/cintamax/?locale=es_LA",
+        "image":"cintamax.jpeg",
+        "membership_level":"1"
+    },
+    {
+        "name":"Pasteleria Anthony's",
+        "address":"Calle a Acajutla Lotificación Inclán #1 Frente al ISSS, Sonsonate",
+        "phone":"2461-2400",
+        "website":"https://anthonyspasteleria.com/",
+        "image":"anthonys.png",
+        "membership_level":"1"
+    },
+    {
+        "name":"Mbeauty",
+        "address":"Plaza Mister Donut, Barrio el Angel, Boulevard Las Palmeras, Multicentro Sonsonate, Local 4 Sonsonate CP 503",
+        "phone":"+503 7667 0635",
+        "website":"https://www.facebook.com/MBeauty.facebar/?locale=es_LA",
+        "image":"mbeauty.jpeg",
+        "membership_level":"3"
+    },
+    {
+        "name":"Caja de credito de Sonsonate",
+        "address":"Calle Obispo Marroquín y 10 Av. Sur # 5-10, Barrio El Ángel, Sonsonate.",
+        "phone":"2429 9600",
+        "website":"https://www.cajasonsonate.com.sv/canales-de-atencion.php",
+        "image":"cajadecreditosonsonate.png",
+        "membership_level":"3"
+    }
+]

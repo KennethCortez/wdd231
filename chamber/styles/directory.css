@@ -58,27 +58,58 @@
     color: var(--accent_color);
 }
 
-/* Hamburger*/
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    margin-left: px;
-    cursor: pointer;
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
+#members.list {
+    display: block;
+}
 
+.member-card {
+    padding: 1rem;
+    background: var(--background-color);
+    font-family: var(--body_font);
+}
 
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
 
+.member-card a {
+    color: var(--accent_color);
+}
 
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: var(--accent_color, --footer-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--body_font, sans-serif);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.controls button:hover {
+    background-color: var(--footer-color);
+    transform: scale(1.05);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
 
 /*Footer*/
 footer {
     background-color: var(--footer-color);
     color: white;
-    padding: 20px 0;
+    padding: 20px 20px;
     font-family: var(--body_font);
     text-align:justify;
     display: grid;
@@ -88,5 +119,5 @@ footer {
 }
 
 .two a {
-    margin: 15px;
+    margin: 10px;
 }
