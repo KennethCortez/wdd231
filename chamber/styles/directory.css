@@ -58,6 +58,10 @@
     color: var(--accent_color);
 }
 
+main {
+    font-family: var(--body_font);
+
+}
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -81,6 +85,7 @@
 
 .member-card a {
     color: var(--accent_color);
+    font-family: var(--body_font);
 }
 
 .controls button {
@@ -90,7 +95,7 @@
     color: white;
     border: none;
     border-radius: 8px;
-    font-family: var(--body_font, sans-serif);
+    font-family: var(--body_font);
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -118,6 +123,15 @@ footer {
         "one""two""three";
 }
 
+footer section {
+    text-align: center;
+}
 .two a {
     margin: 10px;
+    color: black;
+    font-size: 40px;
+}
+
+.church-logo {
+    height: 34px;
 }
