@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Connect, Chamber of commerce</title>
+    <title>Business Connect, Home Page</title>
     <meta name="description" content="Business connect is a chamber of commerce of local businesses here in Sonsonate, El Salvador.">
     <meta name="author" content="Kenneth Cortez">
-    <meta property="og:title" content="Business Connect - Directory">
+    <meta property="og:title" content="Business Connect - Home Page">
     <meta property="og:description" content="Business connect is a chamber of commerce of local businesses here in Sonsonate, El Salvador. We are a non-profit organization that aims to support and promote local businesses.">
     <meta property="og:image" content="https://kennethcortez.github.io/wdd231/chamber/images/bc_mainlogo.svg">
     <meta property="og:url" content="https://kennethcortez.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/bc_favicon.ico">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory_large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,12 +39,57 @@
         </div>
     </header>
     <main>
-        <h1>Directory</h1>
-        <section class="controls">
-            <button id="gridView">Grid</button>
-            <button id="listView">List</button>
+        <section class="hero">
+            <img src="images/heroimg.jpg" alt="A man looking for books, hero image of business connect El Salvador">
+            <div class="hero-text">
+                <h1>Welcome to Business Connect</h1>
+                <p>Your local chamber of commerce in Sonsonate, El Salvador.</p>
+                <a href="../coming_soon.html" class="cta-button">Join Us</a>
+            </div>
         </section>
-        <section id="members" class="grid"></section>
+        <section class="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <!--first item-->
+                <div class="first-item">  
+                    <div class="first-item-img">
+                        <img src="images/bakery.jpg" alt="anthony's bakery announcement image">
+                    </div>
+                    <div class="first-subtitle">
+                        <h3>Antony's bakery is opening a new branch</h3>
+                        <p>We are excited to announce the launch of a new branch, making it easier for you to find your favorites desserts.</p>
+                    </div>
+                </div>
+                <!--second item-->
+                <div class="second-item">  
+                    <div class="second-item-img">
+                        <img src="images/clinic.jpg" alt="clidisa clinic announcement image">
+                    </div>
+                    <div class="second-subtitle">
+                        <h3>Clidisa now provides new dengue control vaccine</h3>
+                        <p>Clidisa has new dose of dengue prevention vaccine for free during July, 2025.</p>
+                    </div>
+                </div>
+                <!--third item-->
+                <div class="third-item">  
+                    <div class="third-item-img">
+                        <img src="images/hstore.jpg" alt="A hardware store announcement image">
+                    </div>
+                    <div class="third-subtitle">
+                        <h3>Santa Sofia hardware store</h3>
+                        <p>Santa Sofia hardware store has renewed its prices, now more accessible to the public.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="weather" class="weather">
+            <h2>Weather in Sonsonate</h2>
+            <p>Plan to visit us, here is how your next three days will be</p>
+            <p id="current-temp"></p>
+            <p id="weather-description"></p>
+            <div id="forecast" class="forecast"></div>
+        </section>
+        <section id="spotlight-container"></section>
     </main>
     <footer>
         <p class="one">Business Connect<br>
