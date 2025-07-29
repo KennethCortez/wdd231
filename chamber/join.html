@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Connect, Join Us</title>
+    <meta name="description" content="Business connect is a chamber of commerce of local businesses here in Sonsonate, El Salvador. This is the page where you can Join us so you can be part of the best chamber of commerce in the area.">
+    <meta name="author" content="Kenneth Cortez">
+    <meta property="og:title" content="Business Connect - Join Us">
+    <meta property="og:description" content="Business connect is a chamber of commerce of local businesses here in Sonsonate, El Salvador. We are a non-profit organization that aims to support and promote local businesses.">
+    <meta property="og:image" content="https://kennethcortez.github.io/wdd231/chamber/images/bc_mainlogo.svg">
+    <meta property="og:url" content="https://kennethcortez.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/bc_favicon.ico">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-title">
+                <img src="images/bc_mainlogo.svg" alt="The main logo of chamber of commerce website">
+                <p>Business Connect</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="../coming_soon.html">Join</a></li>
+                    <li><a href="../coming_soon.html">Discover</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-icon">☰</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="form-and-cards">
+            <form method="get" action="thankyou.html">
+                <label>
+                    First Name
+                    <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required><br><br>
+                </label>
+                <label>
+                    Last name
+                    <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required><br><br>
+                </label>
+                <label>
+                    Organizational Title
+                    <input type="text" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"><br><br>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@domail.com"><br><br>
+                </label>
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="mobilePhone" title="Enter your mobile phone number" autocomplete="tel" placeholder="+503 1234-5678" required><br><br>
+                </label>
+                <label>
+                    Organization Name
+                    <input type="text" name="orgName" title="Enter your organization name" autocomplete="organization" required><br><br>
+                </label>
+                <label>
+                    Membership Level:
+                    <select name="membership" title="Select a membership level" required>
+                        <option value="">-- Select one --</option>
+                        <option value="np">NP Membership (no fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>
+                    Organization description
+                    <textarea name="orgDescription" title="Enter a brief description of your organization" rows="4" cols="50" placeholder="Describe your organization here..."></textarea><br><br>
+                </label>
+                <label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </label>
+                <input type="submit" value="Submit Application">
+            </form>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <a href="#modal-np">Learn more</a>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <a href="#modal-bronze">Learn more</a>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <a href="#modal-silver">Learn more</a>
+                </div>
+                <div class="card">  
+                    <h3>Gold Membership</h3>
+                    <a href="#modal-gold">Learn more</a>
+                </div>
+            </div>
+            <div class="modal" id="modal-np">
+                <div class="modal-content">
+                    <h4>NP Benefits</h4>
+                    <ul>
+                        <li>Events without cost</li>
+                        <li>Basic trainee</li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+    <footer>
+        <p class="one">Business Connect<br>
+            Col. Las Brisas, 1st street, #30<br>
+            info@bussinesconnect.org +503 2451-3888<br>
+        </p>
+        <section class="two">
+            <a href="https://github.com/KennethCortez" target="_blank">
+            <img src="images/github-mark.png" alt="GitHub logo">
+            </a>
+            <a href="https://www.linkedin.com/in/kenneth-cortez-128900272/" target="_blank">
+                <img src="images/in.png" alt="LinkedIn logo">
+            </a>
+            <a href="https://www.churchofjesuschrist.org" target="_blank">
+            <img src="images/church-logo.jpeg" alt="The Church of Jesus Christ of Latter Day Saints logo" class="church-logo">
+            </a>
+        </section>
+        <p class="three">
+            <span id="currentyear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
