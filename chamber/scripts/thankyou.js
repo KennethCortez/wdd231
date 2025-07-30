@@ -1,38 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const modalLinks = document.querySelectorAll('.card a');
-    const modals = document.querySelectorAll('.modal');
-    const closeLinks = document.querySelectorAll('.close');
-
-    modalLinks.forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const modalId = link.getAttribute('href');
-        const modal = document.querySelector(modalId);
-        if (modal) {
-        modal.style.display = 'block';
-        }
-    });
-    });
-
-    closeLinks.forEach(close => {
-    close.addEventListener('click', event => {
-        event.preventDefault();
-        modals.forEach(modal => {
-        modal.style.display = 'none';
-        });
-    });
-    });
-
-  // Closes modals when clicking outside of them
-    window.addEventListener('click', e => {
-    modals.forEach(modal => {
-        if (e.target === modal) {
-        modal.style.display = 'none';
-        }
-    });
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const currentYear = new Date().getFullYear();
@@ -73,9 +38,26 @@ if (hamburger && navMenu) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const timestampInput = document.getElementById('timestamp');
-    if (timestampInput) {
-    const now = new Date();
-    timestampInput.value = now.toLocaleString();
+    const params = new URLSearchParams(window.location.search);
+    const confirmationList = document.getElementById('confirmation-list');
+
+    const fields = [
+    { label: "First Name", key: "firstName" },
+    { label: "Last Name", key: "lastName" },
+    { label: "Email", key: "email" },
+    { label: "Mobile Phone", key: "mobilePhone" },
+    { label: "Organization Name", key: "orgName" },
+    { label: "Form Submitted At", key: "timestamp" }
+    ];
+
+    fields.forEach(field => {
+    const value = params.get(field.key);
+    if (value) {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${field.label}:</strong> ${value}`;
+        confirmationList.appendChild(li);
     }
+    });
 });
+
+
