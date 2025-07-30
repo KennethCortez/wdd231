@@ -59,6 +59,13 @@
     color: var(--accent_color);
 }
 
+h1 {
+    font-family: var(--title_font);
+    color: var(--topic-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
 .form-and-cards {
     display: flex;
     flex-direction: row;
@@ -90,7 +97,7 @@ form {
 
 }   
 
-.cards-container h3 {
+.cards-container h2 {
     color: var(--background-color);
 }
 
@@ -149,7 +156,7 @@ footer section {
     position: relative;
 }
 
-.modal-content h4 {
+.modal-content h3 {
     margin-top: 0;
     color: var(--accent_color);
 }
