@@ -1,0 +1,31 @@
+:root {
+    --background-color: #ffff;
+    --font-color: #000000;
+    --CTA-color: #7298a1;
+    --font-text: 'Open Sans', sans-serif;
+    --font-headings: 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: var(--CTA-color);
+    color: var(--font-color);
+    font-family: var(--font-headings);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    font-family: var(--font-text);
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+section img {
+    max-width: 50%;
+    height: auto;
+}
