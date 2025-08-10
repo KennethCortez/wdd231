@@ -1,0 +1,207 @@
+:root {
+    --title-font: 'Helvetica Neue', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --background-color: #f5f6f7;
+    --background-color-2: #35465c;
+    --text-color-1: #d0d0d5;
+    --text-color-2: #1b1b32;
+    --accent-color: #feac32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section {
+    border: 0.1px solid transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/*hero section*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    background-color: var(--background-color-2);
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: var(--text-color-2);
+    text-align: right;
+    max-width: 40%;
+    padding: 1rem;
+    background: transparent;
+    z-index: 3;
+    font-family: var(--body-font);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to left, #d0d0d5 0%, transparent 100%);
+    z-index: 2;
+}
+
+.hero-text a {
+    color: var(--accent-color);
+    text-shadow: #3b3b4f    2px 2px 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hero-text a:hover {
+    color: var(--background-color-2);
+}
+
+.reasons {
+    background-color: var(--background-color-2);
+    margin: 0;
+    padding: 0;
+}
+
+.reasons h2 {
+    text-align: center;
+    color: var(--text-color-1);
+    font-family: var(--title-font);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reason-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--body-font);
+    color: var(--text-color-1);
+    margin: 10px;
+
+}
+
+.card {
+    background: var(--background-color-2);
+    padding: 15px;
+    margin-bottom: 3rem;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+#testimonials {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+}
+
+#testimonials h2 {
+    text-align: center;
+    color: var(--text-color-2);
+    font-family: var(--title-font);
+    margin-bottom: 1.5rem;
+}
+
+#testimonials-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--background-color);
+}
+
+.testimonial-card {
+    background-color: var(--background-color-2);
+    color: var(--text-color-1);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: var(--body-font);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card h3 {
+    margin: 0 0 0.3rem 0;
+}
+
+.testimonial-card small {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 640px){
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: var(--background-color-2);
+    }
+
+    .hero-text {
+        position:static;
+        text-align: center;
+        max-width: 100%;
+        padding: 1rem;  
+        background: var(--background-color);
+        z-index: 3;
+        transform: none;
+    }
+
+    .hero-text h1, .reason-cards h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p, .reason-cards p {
+        font-size: 1.2rem;
+    }
+
+    .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to top, #d0d0d5 0%, transparent 100%);
+    z-index: 2;
+    }
+
+    .reasons, .reason-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurnBright</title>
+    <meta name="description" content="BurnBright is a website where people can learn advices and tips on how to code without burning out.">
+    <meta name="author" content="Kenneth Cortez">
+    <meta property="og:title" content="BurnBright - Home Page">
+    <meta property="og:description" content="BurnBright is a website where people can learn advices and tips on how to code without burning out.">
+    <meta property="og:image" content="https://kennethcortez.github.io/wdd231/final_project/images/mainlogo.svg"> <!--pending on the image, change it to the correct one -->
+    <meta property="og:url" content="https://kennethcortez.github.io/wdd231/final_project/index.html">
+    <link rel="icon" href="images/bb.ico">
+    <link rel="stylesheet" href="styles/nav_footer.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/details.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-title">
+                <img src="images/mainlogo.svg" alt="The main logo of BurnBright website">
+                <p>BurnBright</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Learn How</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-icon">☰</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/heroimage.jpg" alt="A woman watching code on a computer screen">
+            <div class="hero-text">
+                <h1>Learn how to BurnBright, not out</h1>
+                <p>Discover how to make your journey enjoyable and not burn yourself out in the learning process </p>
+                <a href="about.html" class="cta-button">Learn How</a>
+            </div>
+        </section>
+        <section class="reasons">
+            <h2>Why is it important not to burn yourself out when learning?</h2>
+            <div class="reason-cards">
+                <div class="card">
+                    <h3>Maintain Mental Health</h3>
+                    <p>Burnout can lead to stress, anxiety, and depression. Learning at a sustainable pace helps maintain mental well-being.</p>
+                </div>
+                <div class="card">
+                    <h3>Enhance Learning Retention</h3>
+                    <p>Taking breaks and pacing yourself improves information retention and understanding, leading to better learning outcomes.</p>
+                </div>
+                <div class="card">
+                    <h3>Foster Creativity</h3>
+                    <p>A balanced approach allows for creative thinking and problem-solving, essential skills in coding and development.</p>
+                </div>
+                <div class="card">
+                    <h3>Build Sustainable Habits</h3>
+                    <p>Developing a routine that includes rest and self-care leads to long-term success in coding and personal growth.</p>
+                </div>
+            </div>
+                </section>
+        <section id="testimonials">
+        <h2>What our users says</h2>
+        <div id="testimonials-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p class="one">BurnBright<br>
+            Sonsonate, sonsonate, 1st street block A<br>
+            info@burnbright.org +503 2451-3888<br>
+        </p>
+        <section class="two">
+            <a href="https://github.com/KennethCortez" target="_blank">
+            <img src="images/github-mark.png" alt="GitHub logo">
+            </a>
+            <a href="https://www.churchofjesuschrist.org" target="_blank">
+            <img src="images/church-logo.jpeg" alt="The Church of Jesus Christ of Latter Day Saints logo" class="church-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/kenneth-cortez-8b0b1a1b2/" target="_blank">
+            <img src="images/in.png" alt="LinkedIn logo"> <!-- pending on the image, change it to the correct one -->
+            </a>
+        </section>
+        <p class="three">
+            <span id="currentyear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
