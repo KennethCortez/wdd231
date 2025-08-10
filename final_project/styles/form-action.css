@@ -1,0 +1,29 @@
+:root {
+    --title-font: 'Helvetica Neue', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --background-color: #f5f6f7;
+    --background-color-2: #35465c;
+    --text-color-1: #d0d0d5;
+    --text-color-2: #1b1b32;
+    --accent-color: #feac32;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: var(--text-color-2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: var(--background-color);
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+}

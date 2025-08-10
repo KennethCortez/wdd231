@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BurnBright</title>
+    <title>BurnBright - Form Action</title>
     <meta name="description" content="BurnBright is a website where people can learn advices and tips on how to code without burning out.">
     <meta name="author" content="Kenneth Cortez">
-    <meta property="og:title" content="BurnBright - Help Page">
+    <meta property="og:title" content="BurnBright - Form Action">
     <meta property="og:description" content="BurnBright is a website where people can learn advices and tips on how to code without burning out.">
     <meta property="og:image" content="https://kennethcortez.github.io/wdd231/final_project/images/mainlogo.svg"> <!--pending on the image, change it to the correct one -->
-    <meta property="og:url" content="https://kennethcortez.github.io/wdd231/final_project/testimonials.html">
+    <meta property="og:url" content="https://kennethcortez.github.io/wdd231/final_project/index.html">
     <link rel="icon" href="images/bb.ico">
     <link rel="stylesheet" href="styles/nav_footer.css">
-    <link rel="stylesheet" href="styles/help.css">
+    <link rel="stylesheet" href="styles/form-action.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="scripts/details.js" defer></script>
-    <script src="scripts/help.js" defer></script>
+    <script src="scripts/form-action.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,11 +26,11 @@
                 <img src="images/mainlogo.svg" alt="The main logo of BurnBright website">
                 <p>BurnBright</p>
             </div>
-            <nav>   
+            <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="help.html">Testimonials</a></li>
+                    <li><a href="help.html">Learn How</a></li>
                 </ul>
             </nav>
             <button class="hamburger" aria-label="Toggle navigation">
@@ -39,44 +39,10 @@
         </div>
     </header>
     <main>
-        <h1>Join BurnBright and learn how to enjoy coding</h1>
-        <form id="helpForm" action="form-action.html" method="GET">
-            <label>
-                First Name
-                <input type="text" name="firstName" autocomplete="given-name" required>
-            </label><br><br>
-            <label>
-                Last Name
-                <input type="text" name="lastName" autocomplete="family-name" required>
-            </label><br><br>
-            <label>
-                Email
-                <input type="email" name="email" autocomplete="email" placeholder="example@domain.com">
-            </label><br><br>
-            <label>
-                Mobile Phone
-                <input type="tel" name="mobilePhone" autocomplete="tel" placeholder="+503 1234-5678" required>
-            </label><br><br>
-            <label>
-                Help Level:
-                <select name="membership" required>
-                    <option value="">-- Select one --</option>
-                    <option value="beginner">I need a lot of guidance — I don't know where to start or I get lost easily.</option>
-                    <option value="middle">I can follow instructions — I understand if it's explained step by step.</option>
-                    <option value="expert">I can manage on my own — I can make progress but get stuck at certain points.</option>
-                    <option value="expert II">I just need a review — I know how to do it, but I want it checked or confirmed.</option>
-                </select>
-            </label><br><br>
-            
-            <input type="submit" value="Submit Application">
-        </form>
-        <!-- Modal -->
-        <div id="thankYouModal">
-            <div>
-                <h2>Thank You!</h2>
-                <p>Your application has been submitted successfully. You should be redirected within 10 seconds.</p>
-                <button id="closeModal">Close</button>
-            </div>
+        <div class="container">
+            <h1>Thank You!</h1>
+            <p>Your application has been submitted successfully. Here is what you sent:</p>
+            <ul id="dataList"></ul>
         </div>
     </main>
     <footer>
