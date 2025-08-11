@@ -98,6 +98,10 @@ footer section {
     height: 34px;
 }
 
+.one, .three {
+    padding: 10px;
+}
+
 @media (min-width: 769px) {
 .hamburger {
     display: none;
