@@ -77,10 +77,6 @@ section {
     color: var(--accent-color);
 }
 
-.nav-menu:nth-last-of-type {
-    color: var(--accent-color)
-}
-
 /*Footer*/
 footer {
     background-color: var(--footer-color);
