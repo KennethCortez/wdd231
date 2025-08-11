@@ -12,7 +12,7 @@ async function loadTestimonials() {
             card.className = 'testimonial-card';
             card.innerHTML = `
                 <p>"${item.comment}"</p>
-                <h4>${item.name}</h4>
+                <h3>${item.name}</h3>
                 <small>${item.role} • ${item.city}</small>
                 <div class="meta">${item.date}</div>
             `;
