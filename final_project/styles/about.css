@@ -89,6 +89,6 @@ main {
 }
 
 .cta-button:hover {
-    background-color: darken(var(--accent-color), 10%);
+    background-color: var(--background-color-2);
     color: var(--text-color-2);
 }
