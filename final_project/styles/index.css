@@ -123,6 +123,14 @@ section {
     transition: transform 0.5s ease-in-out;
 }
 
+#testimonials h2 {
+    text-align: center;
+    color: var(--text-color-2);
+    font-family: var(--title-font);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .testimonial-card {
     flex: 0 0 calc(33.333% - 1rem);
     scroll-snap-align: start;
@@ -143,6 +151,7 @@ section {
 
 .testimonial-card h3 {
     margin: 0 0 0.3rem 0;
+    font-family: var(--title-font);
 }
 
 .testimonial-card small {
