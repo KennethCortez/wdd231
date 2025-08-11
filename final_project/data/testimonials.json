@@ -1,17 +1,17 @@
 [
-    {
-        "name": "Sarah Johnson",
-        "role": "Frontend Developer",
-        "comment": "BurnBright helped me balance learning and personal life. The tips really reduce burnout!"
-    },
-    {
-        "name": "Mark Lee",
-        "role": "Software Engineer",
-        "comment": "The advice on pacing yourself made a huge difference. I finally enjoy coding without stress."
-    },
-    {
-        "name": "Emily Carter",
-        "role": "Coding Student",
-        "comment": "I love how BurnBright guides beginners step by step. The community support is amazing!"
-    }
+    {"id":1,"name":"Sarah Johnson","role":"Frontend Developer","comment":"BurnBright helped me balance learning and life.","date":"2025-03-12","city":"Austin"},
+    {"id":2,"name":"Mark Lee","role":"Software Engineer","comment":"Pacing tips changed how I study.","date":"2025-02-28","city":"Seattle"},
+    {"id":3,"name":"Emily Carter","role":"Coding Student","comment":"Step-by-step guides are awesome.","date":"2025-04-01","city":"Boston"},
+    {"id":4,"name":"Liam Patel","role":"Backend Dev","comment":"I stopped burning out thanks to the routines.","date":"2025-01-18","city":"London"},
+    {"id":5,"name":"Olivia Nguyen","role":"UX Designer","comment":"The community support keeps me motivated.","date":"2025-03-05","city":"San Francisco"},
+    {"id":6,"name":"Noah García","role":"Fullstack Dev","comment":"Small habits = big results over time.","date":"2025-02-10","city":"Madrid"},
+    {"id":7,"name":"Ava Kim","role":"Student","comment":"The pacing templates are practical.","date":"2025-04-08","city":"Seoul"},
+    {"id":8,"name":"Ethan Brown","role":"Junior Dev","comment":"Great advice on avoiding late-night cramming.","date":"2025-01-22","city":"Toronto"},
+    {"id":9,"name":"Mia Rossi","role":"Teacher","comment":"I recommend BurnBright to my students.","date":"2025-03-15","city":"Rome"},
+    {"id":10,"name":"Lucas Silva","role":"DevOps","comment":"Better workflows and less stress.","date":"2025-02-02","city":"Lisbon"},
+    {"id":11,"name":"Sophia Martinez","role":"Student","comment":"Clear roadmaps helped me focus.","date":"2025-04-10","city":"San Salvador"},
+    {"id":12,"name":"Benjamin Clark","role":"Engineer","comment":"I finally enjoy learning again.","date":"2025-01-30","city":"Chicago"},
+    {"id":13,"name":"Isabella López","role":"Designer","comment":"Great mix of technical and mental-health tips.","date":"2025-03-20","city":"Barcelona"},
+    {"id":14,"name":"William Johnson","role":"Developer","comment":"Short, actionable tips that actually work.","date":"2025-02-14","city":"Dublin"},
+    {"id":15,"name":"Charlotte Wu","role":"Student","comment":"The accountability ideas kept me consistent.","date":"2025-04-12","city":"Taipei"}
 ]

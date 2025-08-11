@@ -1,28 +1,48 @@
 async function loadTestimonials() {
     const container = document.getElementById('testimonials-container');
-
     try {
-    const response = await fetch('data/testimonials.json');
-    if (!response.ok) throw new Error('Network response was not ok');
-    const testimonials = await response.json();
+        const res = await fetch('data/testimonials.json');
+        if (!res.ok) throw new Error('Network error');
+        const items = await res.json();
 
-    testimonials.forEach(t => {
-        const testimonialDiv = document.createElement('div');
-        testimonialDiv.className = 'testimonial-card';
+        const visible = items.slice(0, 15);
 
-        testimonialDiv.innerHTML = `
-        <p>"${t.comment}"</p>
-        <h3>${t.name}</h3>
-        <small>${t.role}</small>
-        `;
+        visible.forEach(item => {
+            const card = document.createElement('article');
+            card.className = 'testimonial-card';
+            card.innerHTML = `
+                <p>"${item.comment}"</p>
+                <h4>${item.name}</h4>
+                <small>${item.role} • ${item.city}</small>
+                <div class="meta">${item.date}</div>
+            `;
+            container.appendChild(card);
+        });
 
-        container.appendChild(testimonialDiv);
-    });
+        startAutoScroll(container);
 
-    } catch (error) {
-    container.innerHTML = '<p>Sorry, testimonials could not be loaded at this time.</p>';
-    console.error('Error loading testimonials:', error);
+    } catch (err) {
+        container.innerHTML = '<p>Could not load testimonials.</p>';
+        console.error(err);
     }
+}
+
+function startAutoScroll(container) {
+    let scrollAmount = 0;
+    const scrollStep = container.offsetWidth;
+    const maxScroll = container.scrollWidth - container.clientWidth;
+
+    setInterval(() => {
+        if (scrollAmount >= maxScroll) {
+            scrollAmount = 0;
+        } else {
+            scrollAmount += scrollStep;
+        }
+        container.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    }, 7000);
 }
 
 document.addEventListener('DOMContentLoaded', loadTestimonials);
